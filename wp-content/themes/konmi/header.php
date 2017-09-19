@@ -8,11 +8,14 @@
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="icon" 
+      type="image/png" 
+      href="//travel.drogers.net/wp-content/travel.png" />
 
 <?php wp_head(); ?>
 

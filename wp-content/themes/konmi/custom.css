@@ -43,6 +43,14 @@ Theme Name: Konmi
 	background-color: #FFFFFF;
 }
 
+body.custom-background {
+/*     background-size: cover; */
+}
+@media only screen and (min-width: 64.063em) {
+    .large-8 {
+        width: 846px;
+    }
+}
 /*--------------------------------------------------------------
 2.0 Clearing
 --------------------------------------------------------------*/
@@ -71,6 +79,21 @@ ol li ul, ol li ol {
 	background-color: white;
     border-radius: 3px;
     box-shadow: 0 0 0 0, 0 6px 12px rgba(34, 34, 34, 0.1);
+}
+.box.hentry {
+    padding-top: 0;
+}
+.hentry .entry-title {
+    padding-bottom: 0.5rem;
+}
+.single .hentry .entry-title {
+    padding: 2.5rem 0 0;
+}
+@media only screen and (max-width: 34.063em) {
+    .box {
+        padding: 0.9375rem;
+        margin: 1.5rem -0.9375rem;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -208,7 +231,11 @@ h1.site-title {
 
 h1.site-title a {
     color: #E4FBC1;
-    text-shadow: 0 0 5px #000;
+	text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
+}
+
+.top-bar-section ul li > a {
+    color: #ddd;
 }
 
 .site-description {
@@ -218,6 +245,7 @@ h1.site-title a {
 	font-weight: 400;
 	text-align: center;
 	margin-bottom: 1.8rem;
+	text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
 }
 
 /*--------------------------------------------------------------
@@ -459,7 +487,8 @@ h1.site-title a {
 /*--------------------------------------------------------------
 	7.1 Posts and pages
 --------------------------------------------------------------*/
-.entry-title {
+.entry-title,
+.page-title {
 	font-family: 'Kreon', sans-serif;
 	font-weight: 700;
 	color: #0B562B;
